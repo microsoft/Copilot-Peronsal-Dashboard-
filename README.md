@@ -1,33 +1,74 @@
-# Project
+# copilot-personal-dashboard
+ ---                                                                                                         
+                  
+  ## What's in This Report
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+  ### Tab 1 – Adoption Overview                                                                               
+  Track your Copilot usage over time and across apps. See your total
+  actions, weekly average, active days, apps used per week, and estimated time saved. Your User Category and a personalized        
+  recommendation display based on your recent habits. Use the date slider to zoom in on any time                              
+  period.                                                                                                     
+                                                                                                              
+  ### Tab 2 – Engagement & Productivity                                                                       
+  See how much time Copilot is saving you, broken down by app and by week. View which specific Copilot features are saving you the 
+  most hours, ranked by estimated time saved, and track how your savings trend has changed month over month.                                                                                   
+                                                                                                              
+  ### Tab 3 – Usage Journey
+  See your Copilot adoption journey over the last 12 weeks. Track how you progressed through user categories (Non-User → Low User → Novice → Habitual → Power User), view the distribution of users in your organization, and discover the top features used by power users. Includes a prompt-level comparison of your usage vs. power users.
 
-As the maintainer of this project, please make a few updates:
+  ### Tab 4 – Usage Comparisons
+  Compare your Copilot usage against your organization. See how your weekly app actions stack up against the org average, where you rank across apps (Outstanding Performance, Strong Performance, or Growth Area), and how your organization is distributed across user categories.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+  ---
 
-## Contributing
+  ## Screenshots
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit [Contributor License Agreements](https://cla.opensource.microsoft.com).
+  | Adoption Overview | Engagement & Productivity |
+  |---|---|
+  | ![](images/adoption-overview.png) | ![](images/engagement-productivity.png) |
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+  | Usage Journey | Usage Comparisons |
+  |---|---|
+  | ![](images/usage-journey.png) | ![](images/usage-comparisons.png) |
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+  ---
 
-## Trademarks
+  ## Prerequisites                                                                                            
+   
+  - Microsoft 365 Copilot license                                                                             
+  - Access to Viva Insights or a CopilotMetrics data export
+  - Power BI Desktop (free download from Microsoft)                                                           
+                                                                                                              
+  ---                                                                                                         
+                                                                                                              
+  ## How to Set It Up
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft
-trademarks or logos is subject to and must follow
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+  1. Download `CopilotPersonalDashboard.pbit`                                                                 
+  2. Open it in Power BI Desktop
+  3. When prompted, connect to your `CopilotMetrics` data source                                              
+  4. Use the **PersonId** slicer to filter to your own ID                                                     
+  5. Publish to Power BI Service to access it from your browser                                               
+                                                                                                              
+  ---                                                                                                         
+                                                                                                              
+  ## Tips         
+
+  - Use the **date slider** (top of each tab) to filter by the last                                           
+    4 weeks, last quarter, or any custom range.                                                                           
+  - This report refreshes weekly — timing may vary by your                                                    
+    organizational configuration.                                                                             
+                                                                                                              
+  ---                                                                                                         
+                  
+  ## Glossary
+
+  | Term | Definition |
+  |---|---|
+  | **Org Average** | The average usage across all employees in your organization with a Copilot license. |
+  | **Peer Rank / Percentile** | Where you fall compared to peers. "Top 20%" means you use Copilot more than 80% of colleagues. Lower number = higher rank. |                                                            
+  | **User Category** | Your usage tier — Power User, Habitual User, Novice User, Low User, or Non-User - based on your consistency   and volume over the last 12 weeks. |                                              
+  | **Outstanding / Strong / Growth Area** | How your usage ranks per app within your org. Outstanding = Top 10%, Strong = Top 25%, Growth Area = Bottom 50%. |                                                          
+  | **Consistency** | How many weeks you used Copilot out of the weeks in your selected date range. |
+  | **Actions** | Each time you use a Copilot feature (e.g., drafting an email, summarizing a meeting) counts as one action. |                                                                                            
+  | **Time Saved** | An estimate based on Microsoft's research — each Copilot action saves ~6 minutes. Meeting summaries count the actual meeting length, and Intelligent Recap saves ~30 minutes. |                      
+
